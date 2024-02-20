@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background: cadetblue;
+    overflow: hidden;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.logo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_toggle{
+    display: none;
+}
+.navbarlink{
+    justify-content: space-between;
+    padding: 20px;  
+    margin: 10px;
+    
+}
+
+.links li a{
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.links li a:hover{
+    background: blue;
+}
+ul a{
+    text-decoration: none;
+}
+ul{
+    display: inline-flex;
+    text-align: center;
+    list-style: none;
+    
+
+}
+.sub-menu{
+    display: none;
+    background: teal;
+    
+}
+.links :hover .sub-menu{
+    display: block;
+    
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.links:hover .sub-menu ul{
+    display: block;
+    background: teal;
+    margin: 8px;
+}
+.links:hover .sub-menu ul li{
+    width: 150px;
+    font-size: 15px;
+    border-bottom: dotted 1px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.button a{
+    color: #fff7f7;
+    font-size: 15px;
+    padding: 5px;
+}
+.button{
+    padding: 30px;
+    color: aliceblue;
+    background: forestgreen;
+    font-size: 20px;
+}
+.strike{
+    background: url(/Images/avi-waxman-f9qZuKoZYoY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    padding: 100px;
+    background-attachment: fixed;
+}
+
+.stone{
+    background: #f5dcdc;
+    padding: 50px;
+    text-align: center;
+
+}
+.stone h5, .stone h3{
+    padding: 5px;
+
+}
+.middle{
+    background: rgb(197, 187, 187);
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.middleright{
+    width: 40%;
+    float: left;
+    padding: 10px;
+
+}
+.middleleft{
+    float: right;
+    width: 60%;
+    padding: 10px;
+}
+
+.our{
+    padding: 10px;
+    background: #5f5b5b;
+    text-align: center;
+    
+}
+hr{
+    width:10%;
+    margin: auto;
+}
+.our h2{
+    color: aqua;
+}
+.our p{
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    text-align: justify;
+}
+
+#item{
+    background: url(/Images/r-architecture-Y8MJFQYYjh8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    background-attachment: fixed;
+  
+
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+.itemtitle{
+    text-align: center;
+    color: #f41f14;
+    padding: 20px;
+}
+.chose{
+    padding: 10px;
+    background: #f5dcdc;
+}
+
+.choose > h5{
+    text-align: center;
+    text-transform: uppercase;
+}
+.choose  p{
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    
+}
+
+.itemimg{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: center;
+    gap: 10px;
+  
+}
+.itempic{
+  justify-self: center;
+  text-align: center;
+}
+.testimonial-wrapper{
+    padding: 10px;
+    text-align: center;
+    background: #d6ede8;
+    margin: auto;
+}
+
+.feed{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .navBar{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100vw;
+      background-color: #19a7ca;
+      font-size: 20px;
+    }
+
+    .links li {
+      width: 100%;
+      height: 50px;
+      font-size: 25px;
+      justify-content: center;
+      text-align: center;
+      padding: 0%;
+      
+    }
+
+    .links li a {
+        font-size: 18px;
+    }
+    .navbar_toggle {
+        margin-right: 5%;
+        font-size: 30px;
+        color: #ffffff;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        display: block;
+    }
+    .show-nav{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 2%;
+    }
+}
