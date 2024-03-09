@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
-
 .navBar{
     display: flex;
     justify-content: space-between;
@@ -15,7 +13,6 @@
     width: 100%;
     top: 0;
     z-index: 99;
-    
 }
 
 .logo{
@@ -59,6 +56,7 @@ ul a{
 .sub li{
     list-style: none;
 }
+
 #header {
     width: 100%;
 }
@@ -73,7 +71,7 @@ ul a{
 }
   
 .changeTheme {
-    background: #1D1E22;
+    background: black;
     color: #eee;
 }
 .button a{
@@ -112,6 +110,16 @@ ul a{
     text-align: left;
 }
 
+.general{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-infor{
+    width: 65%;
+    background: darkgoldenrod;
+}
+
 .footer-fex{
     display: flex;
     background: #39384a;
@@ -141,6 +149,7 @@ ul a{
     padding: 5px;
     text-transform: uppercase;
 }
+
 .footer-content-logo h3{
     padding: 10px;
     color: #0c08ee;
@@ -162,54 +171,4 @@ ul a{
 }
 .unored li a{
     color: #fff7f7;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .links {
-        display: none;
-    }
-    .navBar{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 100vw;
-      background-color: #19a7ca;
-      font-size: 20px;
-    }
-
-    .links li {
-      width: 100%;
-      height: 50px;
-      font-size: 25px;
-      justify-content: center;
-      text-align: center;
-      padding: 0%;
-      
-    }
-
-    .links li a {
-        font-size: 18px;
-    }
-    .navbar_toggle {
-        margin-right: 5%;
-        font-size: 30px;
-        color: #ffffff;
-        background: transparent;
-        border-color: transparent;
-        transition: all 0.3s linear;
-        cursor: pointer;
-        display: block;
-    }
-    .show-nav{
-        flex-direction: column;
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .logo{
-        width: 100%;
-        justify-content: space-between;
-        margin-right: 2%;
-    }
 }

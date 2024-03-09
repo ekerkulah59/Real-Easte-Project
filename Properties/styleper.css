@@ -44,12 +44,15 @@
 ul a{
     text-decoration: none;
 }
-ul {
+.links {
     display: inline-flex;
     text-align: center;
+    list-style: none;  
+}
+.linksd{
     list-style: none;
-    
-
+    display: inline-flex;
+    text-align: center;
 }
 .button a{
     color: #fff7f7;
@@ -61,6 +64,9 @@ ul {
     color: aliceblue;
     background: forestgreen;
     font-size: 20px;
+}
+.sub li{
+    list-style: none;
 }
 .sub-menu{
     display: none;
@@ -200,6 +206,8 @@ ul {
 }
 .cities{
     text-align: center;
+    /* background: #68db98; */
+    color: #fff;
 }
 
 #wrapper {
@@ -208,8 +216,13 @@ ul {
 	margin: auto;
 	position: relative;
 	overflow: hidden;
+   
+}
+.wrap{
+    background: #5c7176;
 }
 #wrapper ul {
+    padding: 10px;
 	width: 5000px;
 	overflow: hidden;
 	position: absolute;
@@ -276,6 +289,59 @@ ul {
 	background-color: #666;
 }
 
+.footer-fex{
+    display: flex;
+    background: #39384a;
+    color: #FFFFFF;
+}
+.footer-content-logo{
+    width: 30%;
+    padding: 10px;
+}
+.footer-content{
+    width: 70%;
+}
+.footercon-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+}
+.footer-content-row{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.footer-content-row h4{
+    color: #32ee08;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.footer-content-logo h3{
+    padding: 10px;
+    color: #0c08ee;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: underline dashed white;
+
+}
+.footer-content-logo .fa {
+    padding: 3px;
+    background: #19ca63;
+  
+}
+.footer-content-logo{
+   text-align: center;
+}
+.unored li{
+    list-style: none;
+}
+.unored li a{
+    color: #fff7f7;
+}
+
 
 @media only screen and (max-width: 768px) {
     .links {
@@ -324,4 +390,22 @@ ul {
         justify-content: space-between;
         margin-right: 2%;
     }
+}
+
+#header {
+    width: 100%;
+}
+
+#theme-btn {
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+  
+#theme-btn:hover {
+    color: #0d080e;
+}
+  
+.changeTheme {
+    background: #1D1E22;
+    color: #eee;
 }

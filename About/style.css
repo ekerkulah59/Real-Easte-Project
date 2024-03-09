@@ -44,12 +44,15 @@
 ul a{
     text-decoration: none;
 }
-ul{
+.links {
     display: inline-flex;
     text-align: center;
+    list-style: none;  
+}
+.linksd{
     list-style: none;
-    
-
+    display: inline-flex;
+    text-align: center;
 }
 .sub-menu{
     display: none;
@@ -80,6 +83,28 @@ ul{
     font-size: 15px;
     padding: 5px;
 }
+.sub li{
+    list-style: none;
+}
+
+#header {
+    width: 100%;
+}
+
+#theme-btn {
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+  
+#theme-btn:hover {
+    color: #0d080e;
+}
+  
+.changeTheme {
+    background: black;
+    color: #eee;
+}
+
 .button{
     padding: 30px;
     color: aliceblue;
@@ -203,7 +228,58 @@ hr{
     grid-template-columns: auto auto auto;
     justify-content: center;
 }
+.footer-fex{
+    display: flex;
+    background: #39384a;
+    color: #FFFFFF;
+}
+.footer-content-logo{
+    width: 30%;
+    padding: 10px;
+}
+.footer-content{
+    width: 70%;
+}
+.footercon-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+}
+.footer-content-row{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.footer-content-row h4{
+    color: #32ee08;
+    padding: 5px;
+    text-transform: uppercase;
+}
 
+.footer-content-logo h3{
+    padding: 10px;
+    color: #0c08ee;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: underline dashed white;
+
+}
+.footer-content-logo .fa {
+    padding: 3px;
+    background: #19ca63;
+  
+}
+.footer-content-logo{
+   text-align: center;
+}
+.unored li{
+    list-style: none;
+}
+.unored li a{
+    color: #fff7f7;
+}
 
 @media only screen and (max-width: 768px) {
     .links {

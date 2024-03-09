@@ -9,8 +9,7 @@
     <title>Properties</title>
 </head>
 <body>
-    <nav>
-        <div class="navBar">
+    <div class="navBar">
             <div class="logo">
                 <img src="/Images/logo8r.jpg" alt="logo" class="logo-imgg" width="80px">
                 <button class="navbar_toggle">
@@ -23,7 +22,7 @@
                     <li><a href="#">Luxery Villa</a></li>
                     <li><a href="/Properties/properties.html">Properties</a>
                         <div class="sub-menu">
-                            <ul>
+                            <ul class="sub">
                                 <li><a href="/Properties/currentp.html">Current</a></li>
                                 <li><a href="/Properties/featuredp.html">Featured</a></li>
                             </ul>
@@ -35,12 +34,10 @@
                 </ul>
             </div>
             <div class="button">
-                <ul>
-                    <li><a href="#">Login/Signup</a></li>
-                    <li><i class="fa fa-undo"></i></li>
-                    <li><i class="fa fa-heart"></i></li>
-                    <li><i class="fa fa-lock"></i></li>
-
+                <ul class="linksd">
+                    <div id="header">
+                        <div id="theme-btn" class="far fa-moon"></div>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -52,7 +49,7 @@
                     <h1>Our Properties</h1>
                     <h3></h3>
                     <h3>Featured properties</h3>
-                    <ul>
+                    <ul class="sub">
                         <li><button><a href="#current-per">Current properties</a></button></li>
                         <li><button><a href="#properties">Featured properties</a></button></li>
                     </ul>
@@ -82,6 +79,9 @@
                     <span class="slides"></span>
                 </li>
             </ul>
+            <aside>
+                
+            </aside>
         </section>
         <section id="current-per"> 
             <div class="properties">
@@ -203,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="wrap">
             <h1 class="cities">Cities/Countries</h1>
             <div id="wrapper">
                 <ul>
@@ -256,6 +256,51 @@
             
         </section>
     </main>
+    <footer>
+        <div class="footer-fex">
+            <div class="footer-content-logo">
+                <img src="/Images/logo8r.jpg" alt="logo" width="150px">
+                <h3>STONE REAL ESTATE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quam repudiandae debitis, minus nobis omnis. Quam quae quos magnam consequatur quasi, vitae ipsa ipsam odit architecto unde veniam aliquam sit.</p>
+                <div class="fa">
+                    <i class="fa fa-facebook"> </i> 
+                     <i class="fa fa-whatsapp"> </i> 
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footercon-content">
+                    <div class="footer-content-row">
+                        <h4>Quick Links</h4>
+                        <ul class="unored">
+                            <li><i class="fa fa-home"> </i><a href="Index.html"> Home</a></li>
+                            <li><i class="fa fa-building"> </i><a href="/Properties/properties.html"> property</a></li>
+                            <li><i class="fa fa-info-circle"> </i><a href="about.html"> About</a></li>
+                            <li><i class="fa fa-phone"> </i><a href="Contact/contact.html"> Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content-row">
+                        <h4>Our New letters</h4>
+                        <input type="email" placeholder="Email"><br> <br>
+                        <textarea  cols="25" rows="5" placeholder="Leave your massage here"></textarea> <br> <br>
+                        <button type="submit">submit</button>
+                    </div>
+                    <div class="footer-content-row">
+                        <h4>Contact us here</h4>
+                        <p>Stone.real@est.org</p>
+                        <p>stonerealestategroup@gmail.com</p>
+                        <p>(111) 000-0000</p>
+                    </div>
+                    <div class="footer-content-row">
+                        <h4>Find us here</h4>
+                        <p>PO-BOX:12 Melbourne, OH, 19962</p>
+                        <p>PO-BOX:12 Melbourne, TX, 00932</p>
+                        <p>PO-BOX:12 Melbourne, OH, 19962</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="/Properties/script.js"></script>
 </body>
 </html>
